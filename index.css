@@ -1,17 +1,48 @@
+.themes{
+    position: fixed;
+    top:10px;
+    right:10px;
+}
+
+#theme{
+    background-color: orange;
+    padding:4px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#theme2{
+    background-color: rgb(51, 50, 49);
+    padding:4px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
 #head{
     background-color: black;
     color:white;
-    padding:10px;
+    padding:5px;
     position:sticky;
     top:0;
     width:auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+h2{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    top:1px;
 }
 
 .nav{
     display:flex;
-    width: 50px;
-    margin-left: 3rem;
-  justify-content: center; 
+    width: 40%;
+    margin-left: 1rem;
+    gap:4rem; 
 }
 
 a{
@@ -90,17 +121,37 @@ img{
     display: flex;
     padding: 10px;
     height:auto;
-    box-shadow: 2px 2px 5px;
+    box-shadow: 2px 2px 5px black;
     border-top-right-radius: 10px;
 }
 
 
 #story2{
      display: flex;
-      height:auto;
+     height:auto;
     padding: 10px;
-    box-shadow: 2px 02px 5px;
-      border-bottom-right-radius: 10px;
+    box-shadow: 2px 02px 5px black;
+    border-bottom-right-radius: 10px;
+}
+.grid{
+    padding:100px;
+    height:auto;
+    justify-items: center;
+}
+
+.myprojects{
+    display: grid;
+    gap:10px;
+    margin: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.div{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    border-radius: 10px;
+    padding:10px;
 }
 
 #contact{
@@ -124,6 +175,8 @@ a{
 
 .spike{
     background-color: white;
+      padding-bottom: 3px;
+    padding-top:14px;
     color: rgb(173, 6, 173);
 }
 .spike:hover{
@@ -131,9 +184,15 @@ a{
     color:white;
 }
 
+.icon{
+    width: 30px;
+    height: 30px;
+}
 
 .whatsapp{
     background-color: white;
+      padding-bottom: 3px;
+    padding-top:14px;
     color:rgb(11, 88, 11)
 }
 .whatsapp:hover{
@@ -143,6 +202,8 @@ a{
 
 .facebook{
     background-color: blue;
+      padding-bottom: 3px;
+    padding-top:14px;
     color:white
 }
 .facebook:hover{
@@ -153,7 +214,10 @@ a{
 
 .instagram{
     background-color: rgb(217, 12, 12);
+    padding-bottom: 3px;
+    padding-top:14px;
     color:white;
+
 }
 .instagram:hover{
      background-image: linear-gradient(to right, rgb(241, 12, 12), rgb(16, 15, 15));
@@ -171,19 +235,35 @@ a{
 
 
 
-@media {
+@media (max-width:414px) {
+body{
+    font-size: 12px;
+}
 
+    #head{
+        font-size: 10px;
+        height:113px;
+        padding:5px;
+        background-color: rgb(2, 2, 50);
+    }
 
     .nav{
         
     display:flex;
-    width: 50%;
-  justify-content: center
+    width: 40%;
+    height: 30px;
+    padding: 2px;
+    margin-left:1px;
+     gap:5px;
     }
         .imagecontainer {
         width: 50%;    
         height: auto;   
           }
+
+#mybio{
+    padding:5px;
+}
     
 #story{
     display: flex;
@@ -219,6 +299,44 @@ img{
     box-shadow:  1px 1px 10px black;
     border-radius: 10px;
        font-size: 13px;
+}
+
+#contact{
+     background-color: rgb(2, 2, 43);
+}
+
+
+}
+
+
+@media (max-width:1200px){
+    
+    .nav{
+        
+    display:flex;
+    width: 40%;
+    height: 30px;
+    padding: 2px;
+    margin-left:1px;
+     gap:5px;
+    }
+
+    
+.myprojects{
+    display: grid;
+    gap:10px;
+    margin: 10px;
+    /* grid-template-columns: repeat(1,1fr); */
+}
+
+.div{
+    display:flex;
+    width: 300px;
+    padding:10px;
+    flex-wrap: wrap;
+     border-radius: 10px;
+    background-color: bisque;
+   
 }
 
 }
