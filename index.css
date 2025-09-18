@@ -1,19 +1,19 @@
 .themes{
     position: fixed;
-    top:10px;
+    top:9px;
     right:10px;
 }
 
 #theme{
     background-color: orange;
-    padding:4px;
+    padding:2px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 #theme2{
     background-color: rgb(51, 50, 49);
-    padding:4px;
+    padding:2px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -136,7 +136,12 @@ img{
 .grid{
     padding:100px;
     height:auto;
-    justify-items: center;
+    /* justify-items: center; */
+}
+
+img{
+    width: 100px;
+    height: 100px;
 }
 
 .myprojects{
@@ -146,12 +151,22 @@ img{
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 }
 
+b{
+    font-size: 25px;
+}
 .div{
     display:flex;
     flex-wrap: wrap;
-    background-color: bisque;
+    background-image: linear-gradient(rgb(86, 85, 85));
     border-radius: 10px;
     padding:10px;
+}
+
+.div:hover{
+    transform: translateY(-20px) scale(1.1) ;
+     background-image:linear-gradient(to right,rgb(23, 24, 26), rgb(161, 156, 156)) ;
+    transition: 1s ease;
+    color: aliceblue;
 }
 
 #contact{
@@ -166,6 +181,7 @@ a{
     text-decoration: none;
     color: white;
     margin-left: 50%;
+
 }
 
 .icon{
@@ -176,7 +192,7 @@ a{
 .spike{
     background-color: white;
       padding-bottom: 3px;
-    padding-top:14px;
+    padding-top:18px;
     color: rgb(173, 6, 173);
 }
 .spike:hover{
@@ -192,7 +208,7 @@ a{
 .whatsapp{
     background-color: white;
       padding-bottom: 3px;
-    padding-top:14px;
+    padding-top:18px;
     color:rgb(11, 88, 11)
 }
 .whatsapp:hover{
@@ -203,7 +219,7 @@ a{
 .facebook{
     background-color: blue;
       padding-bottom: 3px;
-    padding-top:14px;
+    padding-top:18px;
     color:white
 }
 .facebook:hover{
@@ -215,7 +231,7 @@ a{
 .instagram{
     background-color: rgb(217, 12, 12);
     padding-bottom: 3px;
-    padding-top:14px;
+    padding-top:18px;
     color:white;
 
 }
@@ -232,9 +248,6 @@ a{
 }
 
 
-
-
-
 @media (max-width:414px) {
 body{
     font-size: 12px;
@@ -248,11 +261,10 @@ body{
     }
 
     .nav{
-        
     display:flex;
     width: 40%;
-    height: 30px;
-    padding: 2px;
+    height: 10px;
+    padding: 1px;
     margin-left:1px;
      gap:5px;
     }
@@ -301,15 +313,27 @@ img{
        font-size: 13px;
 }
 
+
+.myprojects{
+    display: grid;
+    gap:10px;
+    margin-left: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.div{
+    width:150px;
+}
+
 #contact{
      background-color: rgb(2, 2, 43);
 }
 
-
 }
 
 
-@media (max-width:1200px){
+
+@media (min-width:1200px){
     
     .nav{
         
@@ -326,7 +350,7 @@ img{
     display: grid;
     gap:10px;
     margin: 10px;
-    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(1,1fr);
 }
 
 .div{
@@ -339,4 +363,4 @@ img{
    
 }
 
-}
+} 
